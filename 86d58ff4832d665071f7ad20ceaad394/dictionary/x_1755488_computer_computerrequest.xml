@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a3260b38832d665071f7ad20ceaad3c6" label="computer Request WW" max_length="40" name="x_1755488_computer_computerrequest" type="collection">
+        <element label="Computer model" mandatory="true" max_length="40" name="computer_model" reference="x_1755488_computer_u_computer_inventory" reference_qual="status=Available^EQ" reference_qual_condition="status=Available^EQ" type="reference"/>
+        <element choice="3" default="Pending" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="Pending"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="Rejected"/>
+                <element inactive_on_update="false" label="Completed" sequence="4" value="Completed"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="Approved"/>
+            </choice>
+        </element>
+        <element label="description" max_length="200" name="description" type="string"/>
+        <element label="Requested for" mandatory="true" max_length="40" name="requested_for" reference="sys_user" type="reference"/>
+        <element label="Request date" mandatory="true" max_length="40" name="request_date" type="glide_date_time"/>
+        <element label="Requested by" mandatory="true" max_length="40" name="requested_by" reference="sys_user" type="reference"/>
+    </element>
+</database>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="229747b8832d665071f7ad20ceaad31d" label="computer Inventory WW" max_length="40" name="x_1755488_computer_u_computer_inventory" type="collection">
+        <element label="Asset number" mandatory="true" max_length="40" name="asset_number" type="string"/>
+        <element label="Model" mandatory="true" max_length="40" name="model" type="string"/>
+        <element display="true" label="Assigner" max_length="40" name="assigner" reference="sys_user" type="reference"/>
+        <element label="Serial number" mandatory="true" max_length="40" name="serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="AssignDate" max_length="40" name="u_assigndate" type="glide_date_time"/>
+        <element choice="3" default="Available" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Available" value="Available"/>
+                <element inactive_on_update="false" label="Assigned" value="Assigned"/>
+                <element inactive_on_update="false" label="Retired" value="Retired"/>
+                <element inactive_on_update="false" label="Maintenance" value="Maintenance"/>
+            </choice>
+        </element>
+    </element>
+</database>

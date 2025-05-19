@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1755488_computer.computerrequest_user" name="x_1755488_computer.computerrequest_user">da974778832d665071f7ad20ceaad354</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-14 08:51:40</sys_created_on>
+        <sys_id>d6974778832d665071f7ad20ceaad359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>da974778832d665071f7ad20ceaad354</sys_name>
+        <sys_package display_value="computerRequestSystem" source="x_1755488_computer">86d58ff4832d665071f7ad20ceaad394</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="computerRequestSystem">86d58ff4832d665071f7ad20ceaad394</sys_scope>
+        <sys_update_name>sys_embedded_help_role_d6974778832d665071f7ad20ceaad359</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-14 08:51:40</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
